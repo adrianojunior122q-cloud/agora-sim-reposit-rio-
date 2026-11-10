@@ -183,7 +183,6 @@ footer.end{padding-block:36px 12px;color:var(--muted);font-size:13px;text-align:
       <a class="chip" href="#saladas" data-t="saladas">Saladas</a>
       <a class="chip" href="#hamburguer" data-t="hamburguer">Hambúrguer</a>
       <a class="chip" href="#horarios" data-t="horarios">Horários</a>
-      <a class="chip" href="#local" data-t="local">Como chegar</a>
     </div>
   </nav>
 
@@ -212,7 +211,6 @@ footer.end{padding-block:36px 12px;color:var(--muted);font-size:13px;text-align:
     <section class="place" id="local" style="scroll-margin-top:64px">
       <h2>Onde estamos</h2>
       <address><b>Av. Rondon Pacheco, 1020</b><br>Morada da Colina<br>Uberlândia - MG, 38411-001</address>
-      <a class="btn line" id="maps" href="#" target="_blank" rel="noopener">Como chegar</a>
     </section>
   </div>
 
@@ -303,7 +301,6 @@ $('burgers').innerHTML=BURGERS.map(function(x){
 }).join('');
 
 /* links */
-$('maps').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(CONFIG.mapsQuery);
 var waText=encodeURIComponent(CONFIG.mensagem);
 var waNum=(CONFIG.whatsapp||'').replace(/\D/g,'');
 $('reserve').href=waNum?('https://wa.me/'+waNum+'?text='+waText):('https://wa.me/?text='+waText);
